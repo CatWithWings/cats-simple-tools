@@ -1,0 +1,43 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "ie": "9"
+        },
+        "debug": true,
+        "forceAllTransforms": true
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "helpers": false,
+      "regenerator": true
+    }]
+  ],
+  "env": {
+    "production" : {
+      "presets": [
+        [
+          "minify",
+          {
+            "removeConsole": true,
+            "removeDebugger": true,
+            "mergeVars": true
+          }
+        ]
+      ],
+      "plugins": [
+        ["transform-remove-console", { 
+          "exclude": [ "error", "warn"] 
+        }],
+    
+        "transform-remove-debugger",
+    
+        "transform-merge-sibling-variables"
+      ]
+    }
+  }
+}

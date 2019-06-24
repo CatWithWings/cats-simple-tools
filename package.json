@@ -1,0 +1,42 @@
+{
+  "name": "cats-simple-tools",
+  "version": "1.0.0",
+  "description": "some simple tool functions",
+  "main": "./bin/index.js",
+  "scripts": {
+    "compile": "cross-env NODE_ENV=production babel lib -d bin --copy-files",
+    "prepublish": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatWithWings/cats-simple-tools.git"
+  },
+  "keywords": [
+    "js",
+    "tools",
+    "demo"
+  ],
+  "author": "CAT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CatWithWings/cats-simple-tools/issues"
+  },
+  "homepage": "https://github.com/CatWithWings/cats-simple-tools#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-stage-2": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-merge-sibling-variables": "^6.9.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-plugin-transform-remove-debugger": "^6.9.4",
+    "babel-preset-minify": "^0.5.0",
+    "cross-env": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}
