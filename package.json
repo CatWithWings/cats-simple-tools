@@ -1,6 +1,6 @@
 {
   "name": "cats-simple-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "some simple tool functions",
   "main": "bin/index.js",
   "scripts": {
