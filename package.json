@@ -2,7 +2,7 @@
   "name": "cats-simple-tools",
   "version": "1.0.0",
   "description": "some simple tool functions",
-  "main": "./bin/index.js",
+  "main": "bin/index.js",
   "scripts": {
     "compile": "cross-env NODE_ENV=production babel lib -d bin --copy-files",
     "prepublish": "npm run compile",
